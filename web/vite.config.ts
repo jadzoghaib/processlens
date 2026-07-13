@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite';
 
 // base matches the GitHub Pages project path
 export default defineConfig({
-  base: '/processlens-studio/',
+  base: '/processlens/',
   plugins: [react(), tailwindcss()],
 });

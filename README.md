@@ -2,7 +2,7 @@
 
 **The interactive evolution of [ProcessLens](https://github.com/jadzoghaib/processlens): a React cockpit over the BPI Challenge 2019 purchase-to-pay event log — 1,595,923 events, 251,734 cases, €1.56B of observed spend — with cross-filtering, animated process maps, and case-level evidence drill-downs.**
 
-> **🔗 Live: [jadzoghaib.github.io/processlens-studio](https://jadzoghaib.github.io/processlens-studio/)**
+> **🔗 Live: [jadzoghaib.github.io/processlens](https://jadzoghaib.github.io/processlens/)**
 
 Public benchmark data, energy-sector framing: the purchase-to-pay backbone (matching logic, vendor handling, invoice clearing, compliance controls) is standard ERP process across utilities, industrials, and energy-transition supply chains.
 
