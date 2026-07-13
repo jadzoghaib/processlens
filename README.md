@@ -1,6 +1,6 @@
-# ProcessLens Studio — Interactive Purchase-to-Pay Process Intelligence
+# ProcessLens — Interactive Purchase-to-Pay Process Intelligence
 
-**The interactive evolution of [ProcessLens](https://github.com/jadzoghaib/processlens): a React cockpit over the BPI Challenge 2019 purchase-to-pay event log — 1,595,923 events, 251,734 cases, €1.56B of observed spend — with cross-filtering, animated process maps, and case-level evidence drill-downs.**
+**A Celonis-style React cockpit over the BPI Challenge 2019 purchase-to-pay event log — 1,595,923 events, 251,734 cases, €1.56B of observed spend — with cross-filtering, animated process maps, and case-level evidence drill-downs. The pandas ETL that computes every number ships in the same repo.**
 
 > **🔗 Live: [jadzoghaib.github.io/processlens](https://jadzoghaib.github.io/processlens/)**
 
@@ -49,7 +49,7 @@ npm run build:site   # production build → ../docs (GitHub Pages)
 
 Median order-to-pay **77 days** with the invoice→payment leg dominating (42d median, p90 97d) · matching-type controls at **100% conformance** across all eligible cases · **22% of cases** hit manual payment-block releases (€397M exposed) · worst vendor: 14,471 cases at 120-day median cycle and 55% rework · **13,881 distinct process variants** — an under-standardized process with clearly ranked levers.
 
-Full metric definitions: [processlens/docs/METHODOLOGY.md](https://github.com/jadzoghaib/processlens/blob/main/docs/METHODOLOGY.md)
+Full metric definitions: [METHODOLOGY.md](METHODOLOGY.md)
 
 ## Data & attribution
 
