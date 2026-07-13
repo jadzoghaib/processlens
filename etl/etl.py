@@ -18,8 +18,9 @@ Design notes:
 - `event Cumulative net worth (EUR)` gives per-case spend, so opportunity ranking
   weighs delay by money at stake, not just case count.
 
-Usage: uv run python src/etl.py
-Output: docs/artifacts/*.json
+Usage (from etl/):  uv run python etl.py
+Input:  etl/data/BPI_Challenge_2019.csv  (download separately — see README)
+Output: web/public/artifacts/*.json      (picked up by dev server and site build)
 """
 import json
 from pathlib import Path
@@ -27,9 +28,12 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+# Repo layout: etl/ (this pipeline) -> web/public/artifacts (consumed by the
+# React app in dev AND copied verbatim into docs/ by `npm run build:site`).
+# Never write to docs/ directly — the web build empties that folder.
 ROOT = Path(__file__).resolve().parent.parent
-DATA = ROOT / "data" / "BPI_Challenge_2019.csv"
-OUT = ROOT / "docs" / "artifacts"
+DATA = ROOT / "etl" / "data" / "BPI_Challenge_2019.csv"
+OUT = ROOT / "web" / "public" / "artifacts"
 OUT.mkdir(parents=True, exist_ok=True)
 
 CASE = "case concept:name"

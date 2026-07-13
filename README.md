@@ -29,7 +29,7 @@ web/ (React 19 + Vite + TypeScript + Tailwind 4 + Recharts + Framer Motion)
 docs/  → GitHub Pages
 ```
 
-All analytics are computed once in the ETL; the browser only renders. The five views and every number are identical to the [static original](https://github.com/jadzoghaib/processlens) — independently recounted against the source CSV.
+All analytics are computed once in the ETL; the browser only renders. The repo is fully self-contained: the same `etl/` pipeline regenerates every artifact byte-for-byte from the raw CSV (verified), and headline figures were independently recounted against the source data. Every metric definition is documented in [METHODOLOGY.md](METHODOLOGY.md) (also served with the live site).
 
 ## Reproduce
 

@@ -9,7 +9,7 @@ from pathlib import Path
 
 import pandas as pd
 
-DATA = Path(__file__).resolve().parent.parent / "data" / "BPI_Challenge_2019.csv"
+DATA = Path(__file__).resolve().parent / "data" / "BPI_Challenge_2019.csv"
 
 # The CSV is ~527 MB; read only what each question needs.
 CASE_KEY = "case concept:name"        # case = purchase document + item
