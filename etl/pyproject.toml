@@ -1,0 +1,6 @@
+[project]
+name = "processlens"
+version = "0.1.0"
+description = "ProcessLens — Celonis-style process intelligence on the BPI Challenge 2019 purchase-to-pay event log. pandas ETL precomputes analytics artifacts; a static cockpit renders them."
+requires-python = ">=3.11"
+dependencies = ["pandas>=2.2", "numpy>=1.26", "requests>=2.31"]

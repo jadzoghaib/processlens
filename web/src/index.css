@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+/* ProcessLens Studio design tokens.
+   Categorical palette validated with the dataviz six-checks script (dark mode):
+   #4C86E8 #17A88C #BD8226 #B06FE0 — fixed order, never cycled. */
+@theme {
+  --color-bg: #0b0e14;
+  --color-panel: #111621;
+  --color-panel2: #161d2b;
+  --color-line: #232c3d;
+  --color-ink: #d7deea;
+  --color-ink2: #8493a8;
+  --color-ink3: #5a6678;
+  --color-cat1: #4c86e8;
+  --color-cat2: #17a88c;
+  --color-cat3: #bd8226;
+  --color-cat4: #b06fe0;
+  --color-good: #34d399;
+  --color-warn: #f5a623;
+  --color-bad: #ef4d4d;
+  --font-mono: "Cascadia Code", "JetBrains Mono", ui-monospace, Consolas, monospace;
+  --font-sans: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+html, body, #root { height: 100%; }
+body { background: var(--color-bg); color: var(--color-ink); font-family: var(--font-sans); font-size: 13px; }
+::-webkit-scrollbar { width: 9px; height: 9px; }
+::-webkit-scrollbar-thumb { background: var(--color-line); border-radius: 5px; }
+
+/* recharts text should wear text tokens, never series color */
+.recharts-text { fill: var(--color-ink2); font-size: 11px; }
+.recharts-cartesian-axis-line, .recharts-cartesian-axis-tick-line { stroke: var(--color-line); }
+.recharts-cartesian-grid line { stroke: #1a2231; }
+.recharts-default-tooltip { border-radius: 8px !important; }
